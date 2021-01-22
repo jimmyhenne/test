@@ -35,7 +35,7 @@ color: black;
 	<script>
 		var map = new mapboxgl.Map({
 			container: 'map',
-			style: "https://adv-smart.de/styles/public/de_style_ortho.json",
+			style: "https://adv-smart.de/styles/public/de_style_grey.json",
 			bounds: [
 				[6.1532,51.1521],
 				[6.6150,51.4534]
@@ -142,7 +142,7 @@ map.addLayer({
 },
 'paint': {
 'line-color': 'black',
-'line-width': 8
+'line-width': 6
 }
 });
 			map.addLayer({
@@ -154,7 +154,7 @@ map.addLayer({
 					'fill-opacity': 0.5,
 					'fill-outline-color': 'red' 
 				}
-			},"Symbole_POI_Schornstein");
+			});
 		});
 
 // When a click event occurs on a feature in the states layer, open a popup at the
